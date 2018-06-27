@@ -1,0 +1,68 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sbf4f22354ee4e0194b246d1dd11a9b5",
+    "_src_": "persons.png",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "uwg52356d393d248be87ff6c78fa0738bd",
+        "platform": "iphone",
+        "templateType": "userwidgets",
+        "topLevelBox": null
+    },
+    "id": "Image0e70005758e654d",
+    "imagescalemode": 1,
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ea8e81e3a2ce4417883df032cb73420f",
+    "name": "kony.ui.Image2",
+    "parent": "flxFooterLeft",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

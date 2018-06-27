@@ -1,0 +1,147 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgProfile": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "lblFullName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "German Nina sample"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Off"
+            }
+        },
+        {
+            "imgProfile": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "lblFullName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Carlos Macutela sample"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "imgProfile": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "option3.png"
+            },
+            "lblFullName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Italo Barboza sample"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segPersons",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f57157a9b9a1457dba522cfdd12050a1",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxContent",
+    "pf": "frmMain",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "f41935d593464482b0beab937288f2da",
+    "rowcounter": 2,
+    "rowfocusskin": "sf921f01c3114ee38df1536b252e24a3",
+    "rowskin": "sb70a4d8712a43ef9664c3856a167307",
+    "rowtemplate": "flxFullName",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s066ca29b0df4f188d65e43921b74794",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxFullName": "flxFullName",
+        "flxName": "flxName",
+        "flxSquareLeft": "flxSquareLeft",
+        "flxStatus": "flxStatus",
+        "imgProfile": "imgProfile",
+        "lblFullName": "lblFullName",
+        "lblStatus": "lblStatus"
+    },
+    "zindex": 1
+}

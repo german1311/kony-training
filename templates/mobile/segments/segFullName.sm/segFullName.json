@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizScrollFlexForm",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s78fd5654f364023b3da9cd50beae8f7",
+    "_title_": null,
+    "addWidgetsdone": false,
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "flxFullName"
+    ],
+    "containerId": true,
+    "containerweight": 100,
+    "currentLocale": "default",
+    "device": "iPhoneX",
+    "displayorientation": 3,
+    "enabledforidletimeout": false,
+    "id": "segFullName",
+    "info": null,
+    "initdone": false,
+    "inputaccessoryviewtype": 4,
+    "intransitionconfig": {
+        "formTransition": "None"
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f41935d593464482b0beab937288f2da",
+    "name": "kony.ui.Form2",
+    "needappmenu": true,
+    "outtransitionconfig": {
+        "formTransition": "None"
+    },
+    "paddinginpixel": false,
+    "platform": "iphone",
+    "prevDevice": "Z10",
+    "prevPlatform": "spabb",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainscrollposition": false,
+    "shellCSS": "iOS_iPhoneX",
+    "titlebar": true,
+    "type": 3,
+    "wType": "Form"
+}

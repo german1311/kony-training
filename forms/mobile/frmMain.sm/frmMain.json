@@ -1,0 +1,144 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizScrollFlexForm",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s78fd5654f364023b3da9cd50beae8f7",
+    "_title_": null,
+    "addWidgetsdone": false,
+    "allboxes": [],
+    "android": {
+        "needAppMenu": false,
+        "psp": {
+            "windowSoftInputMode": 2
+        }
+    },
+    "androidwearos": {
+        "needAppMenu": false
+    },
+    "canUpdateUI": true,
+    "children": [
+        "mainContainer",
+        "flxSearch",
+        "flxEmptySpace",
+        "flxContent"
+    ],
+    "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "mobile",
+            "name": "frmMainController"
+        }
+    },
+    "currentLocale": "default",
+    "desktopweb": {
+        "needAppMenu": false
+    },
+    "device": "iPhone8",
+    "displayorientation": 1,
+    "enabledforidletimeout": false,
+    "id": "frmMain",
+    "ide_postShow": "AS_Form_g55d5f0cab3849cda6da5bb93659a33b",
+    "info": null,
+    "initdone": false,
+    "inputaccessoryviewtype": 4,
+    "ipad": {
+        "needAppMenu": false,
+        "psp": {
+            "inputAccessoryViewType": 4
+        },
+        "titleBar": false
+    },
+    "iphone": {
+        "needAppMenu": false,
+        "psp": {
+            "inputAccessoryViewType": 4,
+            "titleBarAttributes": {
+                "barStyle": 0,
+                "hidesBackButton": false,
+                "kuid": "jc50ff8fb25f4132a718e015b6766bef",
+                "leftBarButtonItems": [],
+                "leftItemsSupplementBackButton": true,
+                "prompt": "",
+                "renderTitleText": true,
+                "rightBarButtonItems": [
+                    {
+                        "enabled": true,
+                        "info": {
+                            "title": "Edit"
+                        },
+                        "kuid": "ecc111bf9c0c4ba6a37b38a8e5dbce4c",
+                        "style": 0,
+                        "tintColor": "4b88f100",
+                        "type": 1
+                    }
+                ],
+                "tintColor": "4b88f100",
+                "translucent": true
+            }
+        },
+        "titleBar": false
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kiosk": {
+        "needAppMenu": false
+    },
+    "kuid": "cece7312a65d40e685b69e1c050a03d5",
+    "layouttype": 2,
+    "name": "kony.ui.Form2",
+    "needappmenu": false,
+    "paddinginpixel": false,
+    "platform": "iphone",
+    "prevDevice": "iPhoneX",
+    "prevPlatform": "iphone",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainscrollposition": false,
+    "shellCSS": "iOS_iPhone8",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "spaan": {
+        "needAppMenu": false
+    },
+    "spaandroidtablet": {
+        "needAppMenu": false
+    },
+    "spabb": {
+        "needAppMenu": false
+    },
+    "spaip": {
+        "needAppMenu": false
+    },
+    "spaipad": {
+        "needAppMenu": false
+    },
+    "spawindowstablet": {
+        "needAppMenu": false
+    },
+    "spawinphone8": {
+        "needAppMenu": false
+    },
+    "titleBarSkin": "s0cda12803ff4ab6b6eb33b1a7d87aa4",
+    "titlebar": true,
+    "type": 3,
+    "wType": "Form",
+    "windows8": {
+        "needAppMenu": false
+    },
+    "winphone8": {
+        "needAppMenu": false
+    }
+}

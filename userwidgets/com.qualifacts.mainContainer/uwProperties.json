@@ -1,0 +1,140 @@
+{
+    "classname": "mainContainer",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g4bac08252d84c2dbbcaaea1c63c7d81",
+                    "originalPropertyKey": "setVisibility",
+                    "propertyKey": "setFooterVisibility",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "setFooterVisibility",
+                        "srcWidget": "flxFooter",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "g8bde1fbf7e3485d92e81a98ca089bf0"
+                }
+            ]
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bc9a29da45c544528da1f3e05828cb70",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 1,
+                    "propertyKey": "onFooterLeftClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onFooterLeftClick",
+                        "srcWidget": "flxFooterLeft",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "edc358d5472f44e4b258032e1715a1c4"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a0f15c0e3bd842b1a0232027a5cd622a",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 2,
+                    "propertyKey": "onFooterCenterClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onFooterCenterClick",
+                        "srcWidget": "flxFooterCenter",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "d4d5a5ae77cc46aa8f7bac950ff9f252"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e948adf22f664caeb2705daa195a1426",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 3,
+                    "propertyKey": "onFooterRightClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onFooterRightClick",
+                        "srcWidget": "flxFooterRight",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "bfc9fdbd6a31451a96a50937fa230350"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d3a6e2d53a144d749ffa8d5c43819f00",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 4,
+                    "propertyKey": "onHeaderLeftClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onHeaderLeftClick",
+                        "srcWidget": "flxHeaderLeft",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "jfe165d8e2884c5da07b7617062ed50c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e55a9d653e1b45c8935d2d2f067d5b13",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 5,
+                    "propertyKey": "onHeaderRightClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onHeaderRightClick",
+                        "srcWidget": "flxHeaderRight",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "a27442b8054049189843f9b77825e0e6"
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.qualifacts",
+    "version": "1.0.0"
+}

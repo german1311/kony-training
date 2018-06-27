@@ -15,14 +15,21 @@ define({
 
         this.view.segPersons.data = dataFormatted;
     },
-    getPersonsFromController: function() {
+    onPersonsClick: function() {
         var self = this;
-        kony.print("getPersonsFromController called");
+        kony.print("getPersons called");
 
         personObject.get(null, function(data) {
             kony.print(JSON.stringify(data));
             self.personsData = data;
             self.populateSegment(data);
+          	self.view.mainContainer.setActiveFooterMenu(1)
         }, onFailed);
-    }
+    },
+  	onSyncClick:function(){
+    	this.view.mainContainer.setActiveFooterMenu(2);
+    },
+  	onExportClick:function(){
+    	this.view.mainContainer.setActiveFooterMenu(3);
+  	}
 });

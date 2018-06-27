@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "55%"
     },
     "_left_": {
         "type": "string",
@@ -26,30 +26,29 @@
     "_skin_": "s99dacfe65934c2c878aef2ee0028f35",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "2dp"
     },
     "_width_": {
         "type": "string",
-        "value": "33%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxFooterLeftContent",
-        "lblPersons"
+        "imgPersons"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxFooterLeft",
+    "id": "flxFooterLeftContent",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "edc358d5472f44e4b258032e1715a1c4",
+    "kuid": "aa4c94039fd4452b878ab08d49ed3f3c",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxFooter",
+    "parent": "flxFooterLeft",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

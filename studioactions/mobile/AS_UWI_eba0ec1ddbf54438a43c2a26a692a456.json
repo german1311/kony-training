@@ -1,6 +1,6 @@
 {
-    "AS_UWI_g86466ff690b41e4954c0d9566a82b05": {
-        "id": "AS_UWI_g86466ff690b41e4954c0d9566a82b05",
+    "AS_UWI_eba0ec1ddbf54438a43c2a26a692a456": {
+        "id": "AS_UWI_eba0ec1ddbf54438a43c2a26a692a456",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
@@ -14,10 +14,10 @@
         },
         "language": "js",
         "actions": [{
-            "id": "INVOKE_FUNCTION___bf6601941b884fa0aa3bdf6c5a4fdf4d",
+            "id": "INVOKE_FUNCTION___a4a1793a085549e7b71a569f5940d96c",
             "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "onPersonsClick",
-            "display": "onPersonsClick",
+            "sequenceKUID": "onSyncClick",
+            "display": "onSyncClick",
             "inputparams": [],
             "parentId": null,
             "callbackType": null,

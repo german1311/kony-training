@@ -9,7 +9,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -24,10 +24,10 @@
         0
     ],
     "_skin_": "sbf4f22354ee4e0194b246d1dd11a9b5",
-    "_src_": "persons.png",
+    "_src_": "icons8_user_account_50.png",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_width_": {
         "type": "ref",
@@ -38,26 +38,21 @@
         "type": "string",
         "value": "50%"
     },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "context": {
         "channel": "mobile",
         "formID": "uwg52356d393d248be87ff6c78fa0738bd",
-        "platform": "iphone",
         "templateType": "userwidgets",
         "topLevelBox": null
     },
-    "id": "Image0e70005758e654d",
+    "id": "imgPersons",
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "ea8e81e3a2ce4417883df032cb73420f",
     "name": "kony.ui.Image2",
-    "parent": "flxFooterLeft",
+    "parent": "flxFooterLeftContent",
     "pf": "userwidgetmodel",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

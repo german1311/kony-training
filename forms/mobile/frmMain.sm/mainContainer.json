@@ -39,7 +39,9 @@
     "clipbounds": true,
     "containerweight": 0,
     "data": {
-        "ide_onFooterLeftClick": "AS_UWI_g86466ff690b41e4954c0d9566a82b05"
+        "ide_onFooterCenterClick": "AS_UWI_eba0ec1ddbf54438a43c2a26a692a456",
+        "ide_onFooterLeftClick": "AS_UWI_g86466ff690b41e4954c0d9566a82b05",
+        "ide_onFooterRightClick": "AS_UWI_eaea4ce5f88e476ea39affc8280f9387"
     },
     "id": "mainContainer",
     "info": null,

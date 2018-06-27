@@ -36,7 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "CopyImage0e0ef9029143c40"
+        "FlexContainer0f4bd091cf0fe4d",
+        "lblExport"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -46,7 +47,7 @@
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "bfc9fdbd6a31451a96a50937fa230350",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxFooter",
     "pf": "userwidgetmodel",

@@ -59,12 +59,3 @@ function onSyncSuccess(){
 function onSyncProgress(object){
     kony.print(JSON.stringify(object));
 }
-
-function getPersons() {
-  	kony.print("getPersons called");
-    personObject.get(null, function(data) {
-      	kony.print(JSON.stringify(data));
-        this.personsData = data;
-        populateSegment(data);
-    }, onFailed);
-}

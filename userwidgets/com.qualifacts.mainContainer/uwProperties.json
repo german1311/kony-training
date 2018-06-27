@@ -2,12 +2,29 @@
     "classname": "mainContainer",
     "definitions": {
         "apis": {
-            "custom": [],
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f5cdd3c724ad434fab44821691eb880e",
+                    "paramList": [
+                        {
+                            "name": "menuNumber"
+                        }
+                    ],
+                    "propertyKey": "setActiveFooterMenu",
+                    "pw": {
+                        "displayName": "setActiveFooterMenu",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ab939ca6b6224596b8d6345d4b83877f",
+                    "type": "event"
+                }
+            ],
             "passthrough": [
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "g4bac08252d84c2dbbcaaea1c63c7d81",
+                    "kuid": "e87f7d873eea43ab87599c928c830bfe",
                     "originalPropertyKey": "setVisibility",
                     "propertyKey": "setFooterVisibility",
                     "pw": {

@@ -31,7 +31,8 @@
     "canUpdateUI": true,
     "children": [
         "mainContainer",
-        "flContent"
+        "flContent",
+        "flxHeaderAction"
     ],
     "containerweight": 100,
     "controllerInfo": {
@@ -99,8 +100,8 @@
     "needappmenu": false,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "iPhoneX",
-    "prevPlatform": "iphone",
+    "prevDevice": "GalaxyS8",
+    "prevPlatform": "android",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,

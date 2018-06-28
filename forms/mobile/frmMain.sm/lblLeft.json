@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "57dp"
+        "value": "1dp"
     },
     "_margin_": [
         1,
@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "sedacf3ccd4a4b379ad7cba56a2b0a5f",
-    "_text_": "Buscador",
+    "_skin_": "scbe1703a1bc407db1d2c80781e6859c",
+    "_text_": "Edit",
     "_top_": {
         "type": "string",
-        "value": "1dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "ref",
@@ -40,9 +40,13 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "Label0j1302e8aa2af40",
+    "id": "lblLeft",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,9 +60,9 @@
     },
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "fb49b93b799547f1a169cbe4137e09a0",
+    "kuid": "e90b94751398433083519b957df0d598",
     "name": "kony.ui.Label",
-    "parent": "flxSearch",
+    "parent": "flxHeaderLeft",
     "pf": "frmMain",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

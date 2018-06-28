@@ -37,7 +37,8 @@
     "children": [
         "flxSquareLeft",
         "flxName",
-        "flxStatus"
+        "flxStatus",
+        "primaryKey"
     ],
     "clipbounds": true,
     "containerId": true,
@@ -51,6 +52,7 @@
     "enablescrolling": true,
     "id": "flxFullName",
     "info": null,
+    "isTemplate": true,
     "iscustomlayout": false,
     "isvisible": true,
     "kuid": "b7cac9e312184872b4eec6f23c285e67",

@@ -1,0 +1,37 @@
+{
+    "AS_UWI_d854b8bb9c9e4e18b8b57c5c966e6fb8": {
+        "id": "AS_UWI_d854b8bb9c9e4e18b8b57c5c966e6fb8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "eventObject",
+            "datatype": "collection"
+        }, {
+            "name": "changedText",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "name": "frmMain",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cece7312a65d40e685b69e1c050a03d5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___b5b660788f7a48a3b358bd8c272c90c7",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onDoneSearchText",
+            "display": "onDoneSearchText",
+            "inputparams": [{
+                "name": "e",
+                "value": " eventObject"
+            }, {
+                "name": "ar",
+                "value": "changedText"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

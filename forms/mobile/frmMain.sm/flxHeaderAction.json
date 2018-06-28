@@ -26,7 +26,7 @@
     "_skin_": "s99dacfe65934c2c878aef2ee0028f35",
     "_top_": {
         "type": "string",
-        "value": "40dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -36,17 +36,19 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "search"
+        "flxHeaderLeft",
+        "flxHeaderCenter",
+        "flxHeaderRight"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxSearch",
+    "id": "flxHeaderAction",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "h9ee4bf397ad4a10811e0db9b44c74f8",
-    "layouttype": 2,
+    "kuid": "f9cd0fb509e74224b00802ad9bcab191",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "frmMain",
     "pf": "frmMain",

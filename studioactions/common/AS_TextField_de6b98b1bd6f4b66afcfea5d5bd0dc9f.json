@@ -1,0 +1,35 @@
+{
+    "AS_TextField_de6b98b1bd6f4b66afcfea5d5bd0dc9f": {
+        "id": "AS_TextField_de6b98b1bd6f4b66afcfea5d5bd0dc9f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "uwua9aa67bcabc41668549bb38eb94d937",
+            "type": "userwidgets",
+            "KUID": "ua9aa67bcabc41668549bb38eb94d937"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "RAISE_CUSTOM_EVENT___c0004a18c6814179a1a6ba97a71ae8ac",
+            "type": "RAISE_CUSTOM_EVENT",
+            "customEvent": "onDone",
+            "inputparams": [{
+                "name": "eventObject",
+                "value": " eventobject",
+                "datatype": "string"
+            }, {
+                "name": "changedText",
+                "value": " changedtext",
+                "datatype": "string"
+            }],
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

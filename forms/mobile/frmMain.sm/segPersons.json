@@ -10,39 +10,15 @@
             },
             "lblFullName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "German Nina sample"
+                "text": "German Nina"
             },
             "lblStatus": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": "Off"
-            }
-        },
-        {
-            "imgProfile": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "option3.png"
             },
-            "lblFullName": {
+            "primaryKey": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Carlos Macutela sample"
-            },
-            "lblStatus": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
-            }
-        },
-        {
-            "imgProfile": {
-                "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "option3.png"
-            },
-            "lblFullName": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Italo Barboza sample"
-            },
-            "lblStatus": {
-                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": "Label"
             }
         }
     ],
@@ -79,12 +55,13 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "02",
+    "counter": "00",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
     "hasSections": false,
     "id": "segPersons",
+    "ide_onRowClick": "AS_Segment_ie7faf40bf664767b1a225e896a2540b",
     "info": null,
     "ipad": {
         "psp": {
@@ -113,7 +90,7 @@
     "retainflexpositionproperties": false,
     "retainselection": false,
     "rowTemplateId": "f41935d593464482b0beab937288f2da",
-    "rowcounter": 2,
+    "rowcounter": 0,
     "rowfocusskin": "sf921f01c3114ee38df1536b252e24a3",
     "rowskin": "sb70a4d8712a43ef9664c3856a167307",
     "rowtemplate": "flxFullName",
@@ -141,7 +118,8 @@
         "flxStatus": "flxStatus",
         "imgProfile": "imgProfile",
         "lblFullName": "lblFullName",
-        "lblStatus": "lblStatus"
+        "lblStatus": "lblStatus",
+        "primaryKey": "primaryKey"
     },
     "zindex": 1
 }

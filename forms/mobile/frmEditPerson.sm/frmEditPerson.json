@@ -31,27 +31,23 @@
     "canUpdateUI": true,
     "children": [
         "mainContainer",
-        "flxEmptySpace",
-        "flxContent",
-        "flxSearch",
-        "flxHeaderAction"
+        "flContent"
     ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "frmMainController"
+            "name": "frmEditPersonController"
         }
     },
     "currentLocale": "default",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone8",
+    "device": "iPhoneX",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "id": "frmMain",
-    "ide_postShow": "AS_Form_g55d5f0cab3849cda6da5bb93659a33b",
+    "id": "frmEditPerson",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -69,7 +65,7 @@
             "titleBarAttributes": {
                 "barStyle": 0,
                 "hidesBackButton": false,
-                "kuid": "jc50ff8fb25f4132a718e015b6766bef",
+                "kuid": "fce3af44d594475fbf770fad6a465f99",
                 "leftBarButtonItems": [],
                 "leftItemsSupplementBackButton": true,
                 "prompt": "",
@@ -80,7 +76,7 @@
                         "info": {
                             "title": "Edit"
                         },
-                        "kuid": "ecc111bf9c0c4ba6a37b38a8e5dbce4c",
+                        "kuid": "d9c3813c72e84bc98eb834070bf5cfe4",
                         "style": 0,
                         "tintColor": "4b88f100",
                         "type": 1
@@ -97,7 +93,7 @@
     "kiosk": {
         "needAppMenu": false
     },
-    "kuid": "cece7312a65d40e685b69e1c050a03d5",
+    "kuid": "cdafc5a82f6e461192800de465ed137d",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": false,
@@ -108,7 +104,7 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone8",
+    "shellCSS": "iOS_iPhoneX",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {

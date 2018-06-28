@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "80%"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +26,7 @@
     "_skin_": "s99dacfe65934c2c878aef2ee0028f35",
     "_top_": {
         "type": "string",
-        "value": "40dp"
+        "value": "80dp"
     },
     "_width_": {
         "type": "string",
@@ -36,20 +36,25 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "search"
+        "txtFirstName",
+        "txtLastName",
+        "txtAddress",
+        "txtPhoneNumber",
+        "txtEmail",
+        "flxStatus"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxSearch",
+    "id": "flContent",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "h9ee4bf397ad4a10811e0db9b44c74f8",
-    "layouttype": 2,
+    "kuid": "bedc8d791aed4316b8aade3e3d2a939e",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmMain",
-    "pf": "frmMain",
+    "parent": "frmEditPerson",
+    "pf": "frmEditPerson",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "snapgridsize": 10,

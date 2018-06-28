@@ -1,0 +1,45 @@
+{
+    "AS_TextField_c58225a6e909482691fc27e4d4ef2309": {
+        "id": "AS_TextField_c58225a6e909482691fc27e4d4ef2309",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "uwua9aa67bcabc41668549bb38eb94d937",
+            "type": "userwidgets",
+            "KUID": "ua9aa67bcabc41668549bb38eb94d937"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___ae2b384c7f9f4ca0a2eee49d10c6bcb2",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "disableFullInput",
+            "display": "disableFullInput",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }, {
+            "id": "RAISE_CUSTOM_EVENT___cf24e3d8360c4dcab01a5b13d457b221",
+            "type": "RAISE_CUSTOM_EVENT",
+            "customEvent": "onDone",
+            "inputparams": [{
+                "name": "eventObject",
+                "value": "  eventobject",
+                "datatype": "string"
+            }, {
+                "name": "changedText",
+                "value": " changedtext",
+                "datatype": "string"
+            }],
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

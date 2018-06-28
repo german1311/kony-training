@@ -9,7 +9,8 @@ define({
             dataFormatted[i] = {
                 imgProfile: "option3.png",
                 lblFullName: element.FirstName + " " + element.LastName,
-                lblStatus: element.Active ? "" : "Off"
+                lblStatus: element.Active ? "" : "Off",
+               	primaryKey: element.Id
             };
         }
 
@@ -18,18 +19,31 @@ define({
     onPersonsClick: function() {
         var self = this;
         kony.print("getPersons called");
-
-        personObject.get(null, function(data) {
-            kony.print(JSON.stringify(data));
-            self.personsData = data;
+        getPersons().then(function(data) {
+            kony.print(JSON.stringify(data));           
             self.populateSegment(data);
-          	self.view.mainContainer.setActiveFooterMenu(1)
+            self.view.mainContainer.setActiveFooterMenu(1);
         }, onFailed);
     },
-  	onSyncClick:function(){
-    	this.view.mainContainer.setActiveFooterMenu(2);
+    onSyncClick: function() {
+        this.view.mainContainer.setActiveFooterMenu(2);
     },
-  	onExportClick:function(){
-    	this.view.mainContainer.setActiveFooterMenu(3);
-  	}
+    onExportClick: function() {
+        this.view.mainContainer.setActiveFooterMenu(3);
+    },
+    onDoneSearchText: function(e, ar) {
+        if (!e.text) {
+            this.populateSegment(personsData);
+            this.view.search.disableFullInput();
+            return;
+        }
+
+        var personsFound = findPerson(e.text);
+        this.populateSegment(personsFound);
+    },
+    onRowSegmentClick: function(eventObject, rowNumber) {
+        var editForm = new kony.mvc.Navigation("frmEditPerson");
+
+        editForm.navigate(eventObject.selectedRowItems[0]);
+    }
 });

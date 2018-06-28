@@ -1,0 +1,73 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Search Persons",
+    "_skin_": "s8f911a66e2c4646911286d69ac171a6",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "android": {
+        "ide_onEndEditing": "AS_TextField_de6b98b1bd6f4b66afcfea5d5bd0dc9f",
+        "psp": {
+            "keyboardActionLabel": 1
+        }
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s5ae1d4c860c42a4bff213d7847fff3c",
+    "id": "txtInput",
+    "ide_onDone": "AS_TextField_c58225a6e909482691fc27e4d4ef2309",
+    "ide_onTouchStart": "AS_TextField_hf43c873a2b848ebb4957c776870fd33",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "bc4d7a1e01944e61b26a8eb198201705",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxContainerInput",
+    "pf": "userwidgetmodel",
+    "placeholderskin": "s416bb38438b4727af043bb9bce127f6",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "search",
+    "wType": "TextField",
+    "zindex": 1
+}

@@ -1,0 +1,65 @@
+{
+    "classname": "search",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bcf86814265a465ab1b74658cec9ce85",
+                    "paramList": [],
+                    "propertyKey": "disableFullInput",
+                    "pw": {
+                        "displayName": "disableFullInput",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b0fd1b962b3b4ab298caf17cafe9e694",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i5ab833f2c3d4c2882d023a166ccb61d",
+                    "paramList": [
+                        {
+                            "name": "eventObject"
+                        },
+                        {
+                            "name": "changedText"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onDone",
+                    "pw": {
+                        "displayName": "onDone",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b0fd1b962b3b4ab298caf17cafe9e694",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.qualifacts",
+    "version": "1.0.0"
+}

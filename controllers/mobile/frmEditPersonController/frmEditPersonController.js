@@ -2,7 +2,7 @@ define({
 
     //Type your controller code here 
     onNavigate: function(context) {
-        var person = getPersonById(context.primaryKey);
+        var person = findPersonById(context.primaryKey);
         if (!person) {
             kony.print(JSON.stringify(context));
             alert("something went wrong, no person found with id: " + context.primaryKey);

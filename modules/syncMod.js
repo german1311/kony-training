@@ -69,10 +69,10 @@ function findPerson(inputText) {
             item.LastName.match(reg));
     });
 
-    return personFound;
+    return personFound ? personFound[0] : null;
 }
 
-function findPersonById(id) {    
+function findPersonById(id) {
     var personFound = this.personsData.filter(function(item) {
         return (item.Id == id);
     });

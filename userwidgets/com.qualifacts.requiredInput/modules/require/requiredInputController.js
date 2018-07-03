@@ -4,10 +4,7 @@ define(function() {
       normal: "EditNormalField"
     };
   	
-  var config = {
-    validateOnLeave : this.validateOnLeave,
-    isRequired: this.isRequired
-  };
+  
 
 	return {
 		constructor: function(baseConfig, layoutConfig, pspConfig) {
@@ -18,6 +15,11 @@ define(function() {
 
 		},
         onDone: function() {          
+          var config = {
+            validateOnLeave : this.validateOnLeave,
+            isRequired: this.isRequired
+          };
+
           if(!config.validateOnLeave){
             return;
           }

@@ -1,0 +1,36 @@
+{
+    "AS_Form_ce9b8bcc64e640578c6ec12d41cd9ef1": {
+        "id": "AS_Form_ce9b8bcc64e640578c6ec12d41cd9ef1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMain",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cece7312a65d40e685b69e1c050a03d5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___d8688b6a3bfd48c491835beb6e03bd20",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "Person",
+            "display": "Person",
+            "inputparams": [{
+                "name": "personObject"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }, {
+            "id": "ADD_SNIPPET__ebe4b8ab75774a56ae7b1caa5c0bb2be",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var person = new Person(\"\");\nperson.get();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

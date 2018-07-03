@@ -22,11 +22,9 @@
             "sequenceKUID": "onDoneSearchText",
             "display": "onDoneSearchText",
             "inputparams": [{
-                "name": "e",
-                "value": " eventObject"
+                "name": "e"
             }, {
-                "name": "ar",
-                "value": "changedText"
+                "name": "ar"
             }],
             "parentId": null,
             "callbackType": null,

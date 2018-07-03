@@ -1,3 +1,4 @@
+/* jshint esnext: true */
 define({
 
     //Type your controller code here 
@@ -10,7 +11,7 @@ define({
                 imgProfile: "option3.png",
                 lblFullName: element.FirstName + " " + element.LastName,
                 lblStatus: element.Active ? "" : "Off",
-               	primaryKey: element.Id
+                primaryKey: element.Id
             };
         }
 
@@ -18,12 +19,11 @@ define({
     },
     onPersonsClick: function() {
         var self = this;
-        kony.print("getPersons called");
-        getPersons().then(function(data) {
-            kony.print(JSON.stringify(data));           
+
+        personModel.getAsync().then((data) => {
             self.populateSegment(data);
             self.view.mainContainer.setActiveFooterMenu(1);
-        }, onFailed);
+        }).catch(Util.logError);
     },
     onSyncClick: function() {
         this.view.mainContainer.setActiveFooterMenu(2);
@@ -45,5 +45,24 @@ define({
         var editForm = new kony.mvc.Navigation("frmEditPerson");
 
         editForm.navigate(eventObject.selectedRowItems[0]);
+    },
+    onInit: function() {
+        let PersonModelClass = require("personModel");
+        var self = this;
+        setupSync().then(() => {
+                if (!personObjectService) {
+                    personObjectService = dataBase.performObjectService(PersonServiceConfig.name, {
+                        "access": "offline"
+                    });
+                }
+
+                if (!personModel) {
+                    personModel = new PersonModelClass(new kony.sdk.KNYObj(PersonServiceConfig.objects.person.name));
+                }
+
+                personModel.startSync()
+                  .then(self.onPersonsClick);
+            })
+            .catch(Util.logError);
     }
 });

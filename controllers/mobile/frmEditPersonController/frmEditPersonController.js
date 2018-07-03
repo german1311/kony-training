@@ -3,7 +3,7 @@ define({
     //Type your controller code here 
     onNavigate: function(context) {
         personModel.findPersonById(context.primaryKey).then((data) => {
-            if (data.length == 0) {
+            if (data.length === 0) {
                 kony.print(JSON.stringify(context));
                 alert("something went wrong, no person found with id: " + context.primaryKey);
                 return;
@@ -15,11 +15,11 @@ define({
             this.view.txtAddress.text = person.Address;
             this.view.txtPhoneNumber.text = person.PhoneNumber;
             this.view.txtEmail.text = person.Email;
-            this.view.swcActive.selectedIndex = person.Active ? 1 : 0;
+            this.view.swcActive.selectedIndex = person.Active == 1 ? 0 : 1;
         });
     },
     onSave: function() {
-
+		
     },
     onCancel: function() {
         var editForm = new kony.mvc.Navigation("frmMain");

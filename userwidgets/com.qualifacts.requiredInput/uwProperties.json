@@ -1,0 +1,144 @@
+{
+    "classname": "requiredInput",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "Android",
+                    "kuid": "gbced6d8ee1f40fdbcdabb5b44c7e84f",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onEndEditing",
+                    "pw": {
+                        "displayName": "onEndEditing",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ae37a5cbf27c48cb825bb3616daa910d",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f164afc1fc2742ddb726de8f166496b4",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onDone",
+                    "pw": {
+                        "displayName": "onDone",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ae37a5cbf27c48cb825bb3616daa910d",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [
+                "Android"
+            ],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "jf44bfc7bf254ae5945f96f16ad1c873",
+                    "originalPropertyKey": "isRequired",
+                    "propertyIndex": 3,
+                    "propertyKey": "isRequired",
+                    "pw": {
+                        "displayName": "Is Required",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ae37a5cbf27c48cb825bb3616daa910d",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "efcb794f63dd4d208e7bf875c53e122b",
+                    "originalPropertyKey": "validateOnLeave",
+                    "propertyIndex": 4,
+                    "propertyKey": "validateOnLeave",
+                    "pw": {
+                        "displayName": "Validate on leave",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "ae37a5cbf27c48cb825bb3616daa910d",
+                    "type": "boolean",
+                    "value": "true/false"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ha885d154dda449296df97be9df2b5b7",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "text",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "text",
+                        "srcWidget": "TextField0ca1baa8b79ae4c",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "jefad853910145d9a44522bd988f872b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g4848d6600894d8e989732b207d7ed12",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 2,
+                    "propertyKey": "placeholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "placeholder",
+                        "srcWidget": "TextField0ca1baa8b79ae4c",
+                        "supportedPlatforms": {
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "jefad853910145d9a44522bd988f872b"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.qualifacts",
+    "version": "1.0.0"
+}

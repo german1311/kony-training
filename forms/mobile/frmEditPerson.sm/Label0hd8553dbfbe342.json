@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "s76928cacf884f089deccc383fa6f727",
+    "_skin_": "s862e30eacbe4e65bf4785f37ed1bf22",
     "_text_": "Active",
     "_top_": {
         "type": "string",
@@ -62,7 +62,7 @@
     "isvisible": true,
     "kuid": "a9f64e73b9a44620a4615d461499321c",
     "name": "kony.ui.Label",
-    "parent": "flxStatus",
+    "parent": "flxStatusLabel",
     "pf": "frmEditPerson",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

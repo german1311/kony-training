@@ -1,0 +1,37 @@
+{
+    "AS_TextField_dae3d0619d3c432d89d21814cdbd09d7": {
+        "id": "AS_TextField_dae3d0619d3c432d89d21814cdbd09d7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "uwu374e3bfa6aa4c48b8518345989639bb",
+            "type": "userwidgets",
+            "KUID": "u374e3bfa6aa4c48b8518345989639bb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___e776a557d6554d57862e0b31b6573c29",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onDone",
+            "display": "onDone",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }, {
+            "id": "RAISE_CUSTOM_EVENT___e73fd9e8e79b40f08262c323c1f428e6",
+            "type": "RAISE_CUSTOM_EVENT",
+            "customEvent": "onDone",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

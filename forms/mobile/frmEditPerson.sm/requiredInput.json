@@ -1,9 +1,11 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -15,7 +17,7 @@
         0,
         0
     ],
-    "_orientation_": 6,
+    "_orientation_": 1,
     "_padding_": [
         0,
         0,
@@ -23,7 +25,8 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s1c270344e73461e9f406992cd373e6c",
+    "_render_": true,
+    "_skin_": "s99dacfe65934c2c878aef2ee0028f35",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -32,30 +35,23 @@
         "type": "string",
         "value": "100%"
     },
-    "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "flxStatusLabel",
-        "swcActive"
-    ],
     "clipbounds": true,
-    "containerweight": 100,
-    "enablescrolling": true,
-    "id": "flxStatus",
+    "containerweight": 0,
+    "data": {},
+    "id": "requiredInput",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "bbf4b5ea9cc447cc8f14ae31547c4abc",
-    "layouttype": 3,
-    "name": "kony.ui.FlexContainer",
+    "kuid": "d242768f45ea4116b51213cfcb9fb7c6",
+    "layouttype": 2,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
     "parent": "flContent",
     "pf": "frmEditPerson",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "snapgridsize": 10,
     "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "sourceUserWidget": "ae37a5cbf27c48cb825bb3616daa910d",
+    "wType": "UserWidgetInstance"
 }

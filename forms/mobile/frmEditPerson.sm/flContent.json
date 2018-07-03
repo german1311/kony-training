@@ -41,7 +41,8 @@
         "txtAddress",
         "txtPhoneNumber",
         "txtEmail",
-        "flxStatus"
+        "flxStatus",
+        "requiredInput"
     ],
     "clipbounds": true,
     "containerweight": 100,

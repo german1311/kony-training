@@ -22,7 +22,7 @@
         0,
         0
     ],
-    "_placeholder_": "Address",
+    "_placeholder_": "Placeholder",
     "_skin_": "sf6ca406d94143f690b84fc9e69e008d",
     "_text_": "",
     "_top_": {
@@ -32,6 +32,9 @@
     "_width_": {
         "type": "string",
         "value": "100%"
+    },
+    "android": {
+        "ide_onEndEditing": "AS_TextField_g5adf6941afc4ffd8e78588e8709a1c6"
     },
     "autocapitalize": "none",
     "autocomplete": false,
@@ -43,16 +46,17 @@
     "containerweight": 100,
     "contentalignment": 4,
     "focusskin": "s5ae1d4c860c42a4bff213d7847fff3c",
-    "id": "txtAddress",
+    "id": "txtInput",
+    "ide_onDone": "AS_TextField_dae3d0619d3c432d89d21814cdbd09d7",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
     "keyboardtype": "A",
-    "kuid": "b20d5fedb8084d428f68469b085d32c3",
+    "kuid": "jefad853910145d9a44522bd988f872b",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "parent": "flContent",
-    "pf": "frmEditPerson",
+    "parent": "requiredInput",
+    "pf": "userwidgetmodel",
     "placeholderskin": "s416bb38438b4727af043bb9bce127f6",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

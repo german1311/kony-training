@@ -1,10 +1,9 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizSwitch",
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -16,49 +15,46 @@
         0,
         0
     ],
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
         0,
         0
     ],
-    "_skin_": "s05489b58f144320a0b43b618a5897fb",
+    "_percent_": true,
+    "_skin_": "s99dacfe65934c2c878aef2ee0028f35",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
-    },
-    "android": {},
-    "canUpdateUI": true,
-    "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "70%"
     },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "Label0hd8553dbfbe342"
+    ],
+    "clipbounds": true,
     "containerweight": 100,
-    "id": "swcActive",
+    "enablescrolling": true,
+    "id": "flxStatusLabel",
     "info": null,
-    "iphone": {},
     "iscustomlayout": false,
     "isvisible": true,
-    "kiosk": {
-        "render": false
-    },
-    "kuid": "bc8b7364d3a34b1d8ecb76dd1939cf44",
-    "leftsidetext": "ON",
-    "name": "kony.ui.Switch",
-    "onslide": null,
-    "osPlatform": "android",
-    "osVersion": "iOS7",
+    "kuid": "f9521af1696f45fb961c14de90243c0a",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
     "parent": "flxStatus",
     "pf": "frmEditPerson",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
-    "rightsidetext": "OFF",
-    "selectedindex": 1,
-    "wType": "Switch",
-    "widgetalignment": 5,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
     "zindex": 1
 }

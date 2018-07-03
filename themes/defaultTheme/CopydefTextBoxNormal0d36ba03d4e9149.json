@@ -21,7 +21,7 @@
     "isForked": false
   },
   "fontSizeInPx": false,
-  "font_color": "333333ff",
+  "font_color": "000000ff",
   "font_name": "iphoneSystem",
   "font_size": 100,
   "font_style": "normal",
@@ -32,7 +32,7 @@
     "isForked": false
   },
   "iphone": {
-    "font_name": "System",
+    "font_name": "Helvetica",
     "font_size": 100,
     "isForked": false
   },

@@ -42,6 +42,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxContainerBox",
+    "ide_onClick": "AS_FlexContainer_b1da8ade9d8e4a01a2e61df864691106",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

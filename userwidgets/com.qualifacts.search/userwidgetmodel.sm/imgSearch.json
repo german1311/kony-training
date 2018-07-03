@@ -4,12 +4,12 @@
     "__parentReadjusting__": false,
     "_base64_": null,
     "_height_": {
-        "type": "string",
-        "value": "50%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -27,11 +27,11 @@
     "_src_": "icons8_search_30.png",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
-        "value": "10%"
+        "value": "5%"
     },
     "canUpdateUI": true,
     "centery": {
@@ -42,7 +42,6 @@
     "context": {
         "channel": "mobile",
         "formID": "uwua9aa67bcabc41668549bb38eb94d937",
-        "platform": "iphone",
         "templateType": "userwidgets",
         "topLevelBox": null
     },
@@ -50,8 +49,8 @@
     "imagescalemode": 1,
     "info": null,
     "iscustomlayout": false,
-    "isvisible": false,
-    "kuid": "a000db62b745421b9361deb4a9fd17b1",
+    "isvisible": true,
+    "kuid": "c441c79e94564f999b742d45faa1ed20",
     "name": "kony.ui.Image2",
     "parent": "flxContainerInput",
     "pf": "userwidgetmodel",
@@ -60,5 +59,5 @@
     "srcType": 1,
     "wType": "Image",
     "widgetalignment": 5,
-    "zindex": 1
+    "zindex": 4
 }

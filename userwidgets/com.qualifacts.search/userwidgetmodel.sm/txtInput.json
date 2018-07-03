@@ -67,7 +67,7 @@
     "securetextentry": false,
     "textinputmode": "A",
     "tooltip": "",
-    "viewtype": "search",
+    "viewtype": "default",
     "wType": "TextField",
-    "zindex": 1
+    "zindex": 4
 }

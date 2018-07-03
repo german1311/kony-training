@@ -21,13 +21,17 @@
             "customEvent": "onDone",
             "inputparams": [{
                 "name": "eventObject",
-                "value": " eventobject",
-                "datatype": "string"
+                "value": " eventobject"
             }, {
                 "name": "changedText",
-                "value": " changedtext",
-                "datatype": "string"
+                "value": " changedtext"
             }],
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__f13090830dc34edd9344d0df7dc3d1fc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"end editing\");",
             "parentId": null,
             "callbackType": null
         }]

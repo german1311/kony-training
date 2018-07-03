@@ -18,9 +18,7 @@
             "type": "INVOKE_FUNCTION",
             "sequenceKUID": "Person",
             "display": "Person",
-            "inputparams": [{
-                "name": "personObject"
-            }],
+            "inputparams": [],
             "parentId": null,
             "callbackType": null,
             "disabled": null,

@@ -25,9 +25,11 @@
             "sequenceKUID": "onRowSegmentClick",
             "display": "onRowSegmentClick",
             "inputparams": [{
-                "name": "eventObject"
+                "name": "eventObject",
+                "value": " eventobject"
             }, {
-                "name": "rowNumber"
+                "name": "rowNumber",
+                "value": " rowNumber"
             }],
             "parentId": null,
             "callbackType": null,

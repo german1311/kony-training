@@ -32,14 +32,16 @@ define({
         this.view.mainContainer.setActiveFooterMenu(3);
     },
     onDoneSearchText: function(e, ar) {
+        var self = this;
         if (!e.text) {
-            this.populateSegment(personsData);
+            this.onPersonsClick();
             this.view.search.disableFullInput();
             return;
         }
 
-        var personsFound = findPerson(e.text);
-        this.populateSegment(personsFound);
+        personModel.findPerson(e.text).then((data) => {
+            self.populateSegment(data);
+        });
     },
     onRowSegmentClick: function(eventObject, rowNumber) {
         var editForm = new kony.mvc.Navigation("frmEditPerson");
@@ -61,7 +63,7 @@ define({
                 }
 
                 personModel.startSync()
-                  .then(self.onPersonsClick);
+                    .then(self.onPersonsClick);
             })
             .catch(Util.logError);
     }

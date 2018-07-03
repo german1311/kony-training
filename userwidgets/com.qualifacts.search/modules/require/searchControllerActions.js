@@ -21,6 +21,7 @@ define({
         if (self.onDone) {
             self.onDone(eventobject, changedtext);
         }
+        alert("end editing");
     },
     /** onClick defined for flxContainerInput **/
     AS_FlexContainer_b98766bb2682409db1b21af31bd88f69: function AS_FlexContainer_b98766bb2682409db1b21af31bd88f69(eventobject) {
@@ -30,7 +31,11 @@ define({
     /** onClick defined for flxContainerControls **/
     AS_FlexContainer_b664d6657c62489199e0f48c0c271787: function AS_FlexContainer_b664d6657c62489199e0f48c0c271787(eventobject) {
         var self = this;
-        self.enableFullInput.call(this);
-        self.view.flxContainerInput.width = "100%";
+        return self.enableFullInput.call(this);
+    },
+    /** onClick defined for flxContainerBox **/
+    AS_FlexContainer_b1da8ade9d8e4a01a2e61df864691106: function AS_FlexContainer_b1da8ade9d8e4a01a2e61df864691106(eventobject) {
+        var self = this;
+        return self.enableFullInput.call(this);
     }
 });

@@ -88,7 +88,6 @@ define(() => {
                     this.personObject.updateByPK(person, options, resolve, reject);
                 } else {
                     let options = {};
-                    person.Id = 1;
                     this.personObject.create(person, options, resolve, reject);
                 }
 

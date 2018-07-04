@@ -131,11 +131,31 @@
                         "wType": "TextField"
                     },
                     "srcWgtKUID": "jefad853910145d9a44522bd988f872b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 5,
+                    "propertyKey": "skin1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "displayName": "Normal",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "jefad853910145d9a44522bd988f872b"
                 }
             ]
         },
         "widgets": {
-            "expose": [],
+            "expose": [
+                {
+                    "kuid": "ebd0d1206af24c5091a51a38edb3f6ca",
+                    "propertyKey": "txtInput",
+                    "srcWgtKUID": "jefad853910145d9a44522bd988f872b"
+                }
+            ],
             "passthrough": []
         }
     },

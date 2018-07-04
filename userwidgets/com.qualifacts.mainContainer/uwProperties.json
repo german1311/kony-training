@@ -46,7 +46,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "bc9a29da45c544528da1f3e05828cb70",
+                    "kuid": "g3dde833386e4fb69b919dff36316576",
                     "originalPropertyKey": "onClick",
                     "propertyIndex": 1,
                     "propertyKey": "onFooterLeftClick",
@@ -64,7 +64,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "a0f15c0e3bd842b1a0232027a5cd622a",
+                    "kuid": "f602af7a613f4eea98235d8dc04f3fca",
                     "originalPropertyKey": "onClick",
                     "propertyIndex": 2,
                     "propertyKey": "onFooterCenterClick",
@@ -82,7 +82,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "e948adf22f664caeb2705daa195a1426",
+                    "kuid": "a9e8b7450a5b4177b57d17d26d1beae3",
                     "originalPropertyKey": "onClick",
                     "propertyIndex": 3,
                     "propertyKey": "onFooterRightClick",
@@ -96,42 +96,6 @@
                         "wType": "FlexContainer"
                     },
                     "srcWgtKUID": "bfc9fdbd6a31451a96a50937fa230350"
-                },
-                {
-                    "access": "Enable",
-                    "group": "General",
-                    "kuid": "d3a6e2d53a144d749ffa8d5c43819f00",
-                    "originalPropertyKey": "onClick",
-                    "propertyIndex": 4,
-                    "propertyKey": "onHeaderLeftClick",
-                    "pw": {
-                        "access": "readwrite",
-                        "category": "action",
-                        "displayName": "onHeaderLeftClick",
-                        "srcWidget": "flxHeaderLeft",
-                        "type": "action",
-                        "uiRepresentation": "Label-Label-Button-Button",
-                        "wType": "FlexContainer"
-                    },
-                    "srcWgtKUID": "jfe165d8e2884c5da07b7617062ed50c"
-                },
-                {
-                    "access": "Enable",
-                    "group": "General",
-                    "kuid": "e55a9d653e1b45c8935d2d2f067d5b13",
-                    "originalPropertyKey": "onClick",
-                    "propertyIndex": 5,
-                    "propertyKey": "onHeaderRightClick",
-                    "pw": {
-                        "access": "readwrite",
-                        "category": "action",
-                        "displayName": "onHeaderRightClick",
-                        "srcWidget": "flxHeaderRight",
-                        "type": "action",
-                        "uiRepresentation": "Label-Label-Button-Button",
-                        "wType": "FlexContainer"
-                    },
-                    "srcWgtKUID": "a27442b8054049189843f9b77825e0e6"
                 }
             ]
         },

@@ -27,6 +27,16 @@ define({
         var self = this;
         return self.onDoneSearchText.call(this, eventObject, changedText);
     },
+    /** onClick defined for flxHeaderLeft **/
+    AS_FlexContainer_g9b022abbce8406bb466682e18241f26: function AS_FlexContainer_g9b022abbce8406bb466682e18241f26(eventobject) {
+        var self = this;
+        return self.onDeleteClick.call(this);
+    },
+    /** onClick defined for flxHeaderRight **/
+    AS_FlexContainer_h843fc3a9d6c4eb69f77f6fe87a960df: function AS_FlexContainer_h843fc3a9d6c4eb69f77f6fe87a960df(eventobject) {
+        var self = this;
+        return self.onAddClick.call(this);
+    },
     /** postShow defined for frmMain **/
     AS_Form_adf5b847eef145c18471feed69f74e19: function AS_Form_adf5b847eef145c18471feed69f74e19(eventobject) {
         var self = this;

@@ -23,7 +23,7 @@
         0
     ],
     "_placeholder_": "Placeholder",
-    "_skin_": "sf6ca406d94143f690b84fc9e69e008d",
+    "_skin_": "sf95ac85998c4e61ae81092fbdf13c6e",
     "_text_": "",
     "_top_": {
         "type": "string",
@@ -63,5 +63,5 @@
     "tooltip": "",
     "viewtype": "default",
     "wType": "TextField",
-    "zindex": 1
+    "zindex": 2
 }

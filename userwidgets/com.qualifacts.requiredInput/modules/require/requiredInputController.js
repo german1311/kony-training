@@ -7,8 +7,9 @@ define(function() {
   
 
 	return {
-		constructor: function(baseConfig, layoutConfig, pspConfig) {
-
+		constructor: function(baseConfig, layoutConfig, pspConfig) {          	
+			console.log("baseConfig: "+ JSON.stringify(baseConfig));
+          	console.log("pspConfig: "+ JSON.stringify(pspConfig));
 		},
 		//Logic for getters/setters of custom properties
 		initGettersSetters: function() {

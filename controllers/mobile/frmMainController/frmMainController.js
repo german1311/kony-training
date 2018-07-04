@@ -17,10 +17,17 @@ define({
 
         this.view.segPersons.data = dataFormatted;
     },
+    onAddClick:function(){
+        var editForm = new kony.mvc.Navigation("frmEditPerson");
+        editForm.navigate();
+    },
+    onDeleteClick:function(){
+      
+    },
     onPersonsClick: function() {
         var self = this;
 
-        personModel.getAsync().then((data) => {
+        personModel.get().then((data) => {
             self.populateSegment(data);
             self.view.mainContainer.setActiveFooterMenu(1);
         }).catch(Util.logError);
@@ -41,7 +48,7 @@ define({
 
         personModel.findPerson(e.text).then((data) => {
             self.populateSegment(data);
-        });
+        }).catch(Util.logError);
     },
     onRowSegmentClick: function(eventObject, rowNumber) {
         var editForm = new kony.mvc.Navigation("frmEditPerson");
@@ -66,5 +73,6 @@ define({
                     .then(self.onPersonsClick);
             })
             .catch(Util.logError);
+      	console.log("onInit called");
     }
 });

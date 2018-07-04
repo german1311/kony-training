@@ -36,6 +36,7 @@
         "isEnableJSContaineriOS": true
     },
     "cordovaVersionInfo": {
+        "cordovaVersion": "8.0.0",
         "useGlobalCordova": false
     },
     "appmenu": {

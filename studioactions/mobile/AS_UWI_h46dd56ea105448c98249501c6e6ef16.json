@@ -1,0 +1,28 @@
+{
+    "AS_UWI_h46dd56ea105448c98249501c6e6ef16": {
+        "id": "AS_UWI_h46dd56ea105448c98249501c6e6ef16",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMain",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cece7312a65d40e685b69e1c050a03d5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___e12a74282b7f4c19aa1c9ba5ef7ac418",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onDeleteClick",
+            "display": "onDeleteClick",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

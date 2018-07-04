@@ -45,7 +45,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "GalaxyS8",
+    "device": "PixelXL",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmEditPerson",
@@ -105,7 +105,7 @@
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,
     "retainscrollposition": false,
-    "shellCSS": "and_GalaxyS8",
+    "shellCSS": "and_PixelXL",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {

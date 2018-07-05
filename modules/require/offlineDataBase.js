@@ -4,9 +4,10 @@ define(() => {
     return class OfflineDataBase {
         setup(options = {}) {
             var promise = new Promise((resolve, reject) => {
-                KNYMobileFabric
-                    .OfflineObjects
-                    .setup(options, resolve, reject);
+
+                KNYMobileFabric.OfflineObjects.drop(options, () => {
+                    KNYMobileFabric.OfflineObjects.setup(options, resolve, reject);
+                }, reject);
             });
 
             return promise;

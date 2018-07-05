@@ -21,9 +21,9 @@ define(() => {
             'uploadBatchSize': 20
         }, onSyncProgress = null) {
             var promise = new Promise((resolve, reject) => {
-                this.personObject.startSync(options, ()=>{
-                  console.log("syncronized");
-                  resolve();
+                this.personObject.startSync(options, () => {
+                    console.log("syncronized");
+                    resolve();
                 }, reject, onSyncProgress);
             });
 
@@ -84,11 +84,24 @@ define(() => {
                             Id: person.Id,
                         },
                         markForUpload: true
-                    }
+                    };
+
                     this.personObject.updateByPK(person, options, resolve, reject);
                 } else {
-                    let options = {};
-                    this.personObject.create(person, options, resolve, reject);
+                    let newPersonObject = new kony.sdk.KNYObj(this.personObject.name);
+                    let options = {
+                        "trackChanges": false
+                    };
+                    
+                    let newPerson = {
+                        Active: person.Active,
+                        Address: person.Address,
+                        Email: person.Email,
+                        FirstName: person.FirstName,
+                        LastName: person.LastName,
+                        PhoneNumber: person.PhoneNumber
+                    };
+                    newPersonObject.create(newPerson, options, resolve, reject);
                 }
 
             });
@@ -113,5 +126,5 @@ define(() => {
 
             return deletePromise;
         }
-    }
+    };
 });

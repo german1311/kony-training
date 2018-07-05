@@ -40,6 +40,9 @@
     ],
     "clipbounds": true,
     "containerweight": 100,
+    "disabledSkins": {
+        "focusSkin": "sa6387a074464f0885ef66142ee8f800"
+    },
     "enablescrolling": true,
     "id": "flxHeaderRight",
     "ide_onClick": "AS_FlexContainer_e23834281ea8442081cd59a018d701c9",

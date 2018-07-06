@@ -64,8 +64,9 @@ define({
             alertType: constants.ALERT_TYPE_CONFIRMATION,
             yesLabel: "Si",
             alertHandler: (params) => {
-                console.log(params);
-                personModel.delete(person.primaryKey).then(self.onPersonsClick).catch(Util.logError);
+                if (params) {
+                    personModel.delete(person.primaryKey).then(self.onPersonsClick).catch(Util.logError);
+                }
             }
         };
 

@@ -4,6 +4,10 @@
     "__parentReadjusting__": false,
     "_data_": [
         {
+            "imgDelete": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "icons8_minus_48.png"
+            },
             "imgProfile": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "option3.png"
@@ -60,8 +64,8 @@
     "focuseditem": null,
     "groupcells": false,
     "hasSections": false,
+    "hiddencolumns": {},
     "id": "segPersons",
-    "ide_onRowClick": "AS_Segment_ie7faf40bf664767b1a225e896a2540b",
     "info": null,
     "ipad": {
         "psp": {
@@ -113,9 +117,12 @@
     "widgetalignment": 5,
     "widgetdatamap": {
         "flxFullName": "flxFullName",
+        "flxLeft": "flxLeft",
         "flxName": "flxName",
+        "flxRight": "flxRight",
         "flxSquareLeft": "flxSquareLeft",
         "flxStatus": "flxStatus",
+        "imgDelete": "imgDelete",
         "imgProfile": "imgProfile",
         "lblFullName": "lblFullName",
         "lblStatus": "lblStatus",

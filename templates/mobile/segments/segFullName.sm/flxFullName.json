@@ -35,10 +35,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxSquareLeft",
-        "flxName",
-        "flxStatus",
-        "primaryKey"
+        "flxLeft",
+        "flxRight"
     ],
     "clipbounds": true,
     "containerId": true,

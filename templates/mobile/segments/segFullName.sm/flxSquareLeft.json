@@ -49,7 +49,7 @@
     "kuid": "ia04cd25097b4f939b46270b802c8be5",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxFullName",
+    "parent": "flxRight",
     "pf": "segFullName",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

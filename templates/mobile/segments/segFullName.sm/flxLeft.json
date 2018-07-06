@@ -30,26 +30,26 @@
     },
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "0%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblFullName"
+        "imgDelete"
     ],
     "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxName",
+    "id": "flxLeft",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,
-    "kuid": "h581d6c5f113431d9a4fdbfcbfd23ba3",
+    "kuid": "ed609d2497fa43fbb84716966f46c972",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxRight",
+    "parent": "flxFullName",
     "pf": "segFullName",
     "retaincontentalignment": false,
     "retainflexpositionproperties": false,

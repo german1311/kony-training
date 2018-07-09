@@ -8,7 +8,7 @@ var PersonServiceConfig = {
 };
 
 
-var database;
+var dataBase;
 var personObjectService;
 var personModel;
 

@@ -10,10 +10,10 @@ define({
             self.onDone(eventobject, changedtext);
         }
     },
-    /** onTouchStart defined for txtInput **/
-    AS_TextField_hf43c873a2b848ebb4957c776870fd33: function AS_TextField_hf43c873a2b848ebb4957c776870fd33(eventobject, x, y) {
+    /** onTouchEnd defined for txtInput **/
+    AS_TextField_ha2a828e20a341fd91f572574a69cd8a: function AS_TextField_ha2a828e20a341fd91f572574a69cd8a(eventobject, x, y) {
         var self = this;
-        return self.enableFullInput.call(this);
+        return self.disableFullInput.call(this);
     },
     /** onEndEditing defined for txtInput **/
     AS_TextField_de6b98b1bd6f4b66afcfea5d5bd0dc9f: function AS_TextField_de6b98b1bd6f4b66afcfea5d5bd0dc9f(eventobject, changedtext) {

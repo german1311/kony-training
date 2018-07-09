@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "35%"
     },
     "allboxes": [],
     "autogrowmode": 0,

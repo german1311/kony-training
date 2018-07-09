@@ -1,0 +1,33 @@
+{
+    "AS_TextField_ha2a828e20a341fd91f572574a69cd8a": {
+        "id": "AS_TextField_ha2a828e20a341fd91f572574a69cd8a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "uwua9aa67bcabc41668549bb38eb94d937",
+            "type": "userwidgets",
+            "KUID": "ua9aa67bcabc41668549bb38eb94d937"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___bcd709eee1bd436dac6d98742fdc2546",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "disableFullInput",
+            "display": "disableFullInput",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

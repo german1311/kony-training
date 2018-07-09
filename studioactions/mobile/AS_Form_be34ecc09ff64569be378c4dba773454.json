@@ -1,6 +1,6 @@
 {
-    "AS_Form_adf5b847eef145c18471feed69f74e19": {
-        "id": "AS_Form_adf5b847eef145c18471feed69f74e19",
+    "AS_Form_be34ecc09ff64569be378c4dba773454": {
+        "id": "AS_Form_be34ecc09ff64569be378c4dba773454",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
@@ -14,10 +14,10 @@
         },
         "language": "js",
         "actions": [{
-            "id": "INVOKE_FUNCTION___abd5e8b12ff440229e5510c86bd5a838",
+            "id": "INVOKE_FUNCTION___he2c7442937d4452bfb25dd091c8c159",
             "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "onPostShow",
-            "display": "onPostShow",
+            "sequenceKUID": "onInit",
+            "display": "onInit",
             "inputparams": [],
             "parentId": null,
             "callbackType": null,

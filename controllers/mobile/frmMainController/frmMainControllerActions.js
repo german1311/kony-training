@@ -32,9 +32,14 @@ define({
         var self = this;
         return self.onAddClick.call(this);
     },
+    /** init defined for frmMain **/
+    AS_Form_be34ecc09ff64569be378c4dba773454: function AS_Form_be34ecc09ff64569be378c4dba773454(eventobject) {
+        var self = this;
+        return self.onInit.call(this);
+    },
     /** postShow defined for frmMain **/
     AS_Form_adf5b847eef145c18471feed69f74e19: function AS_Form_adf5b847eef145c18471feed69f74e19(eventobject) {
         var self = this;
-        return self.onInit.call(this);
+        return self.onPostShow.call(this);
     }
 });

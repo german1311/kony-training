@@ -2,11 +2,15 @@
 
 define(() => {
     return class OfflineDataBase {
+        constructor() {
+            this.isUp = false;
+        }
         setup(options = {}) {
+            var self = this;
             var promise = new Promise((resolve, reject) => {
-
-                KNYMobileFabric.OfflineObjects.drop(options, () => {
-                    KNYMobileFabric.OfflineObjects.setup(options, resolve, reject);
+                KNYMobileFabric.OfflineObjects.setup(options, () => {
+                    self.isUp = true;
+                    resolve()
                 }, reject);
             });
 
@@ -17,15 +21,6 @@ define(() => {
             "access": "offline"
         }) {
             return kony.sdk.getCurrentInstance().getObjectService(offLineObjectServiceName, options);
-        }
-
-        /** return the status of the data Base, 
-         * if its false, make sure to have called setup method 
-         * */
-        status() {
-            return {
-                online: true
-            };
         }
     };
 });

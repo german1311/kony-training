@@ -13,15 +13,11 @@
         },
         "language": "js",
         "actions": [{
-            "id": "INVOKE_FUNCTION___bfb316b0775b4a169f4b5c2e7c810980",
-            "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "enableFullInput",
-            "display": "enableFullInput",
-            "inputparams": [],
+            "id": "ADD_SNIPPET__i4ff5a1be34c4d3ba8594ea04ff6e444",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "console.log(\"calling from flxContainerBox\");\nthis.enableFullInput();",
             "parentId": null,
-            "callbackType": null,
-            "disabled": null,
-            "source": "controller"
+            "callbackType": null
         }]
     }
 }

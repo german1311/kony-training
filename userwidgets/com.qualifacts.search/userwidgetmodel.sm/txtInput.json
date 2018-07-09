@@ -34,7 +34,6 @@
         "value": "preferred"
     },
     "android": {
-        "ide_onEndEditing": "AS_TextField_de6b98b1bd6f4b66afcfea5d5bd0dc9f",
         "psp": {
             "keyboardActionLabel": 1
         }
@@ -51,7 +50,6 @@
     "focusskin": "s5ae1d4c860c42a4bff213d7847fff3c",
     "id": "txtInput",
     "ide_onDone": "AS_TextField_c58225a6e909482691fc27e4d4ef2309",
-    "ide_onTouchEnd": "AS_TextField_ha2a828e20a341fd91f572574a69cd8a",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

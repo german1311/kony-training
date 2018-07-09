@@ -41,7 +41,10 @@ define({
     },
     onSyncClick: function() {
         this.view.mainContainer.setActiveFooterMenu(2);
-        personModel.startSync().then(self.onPersonsClick);
+        personModel.startSync().then(() => {
+            alert("Sincronized");
+            self.onPersonsClick();
+        });
     },
     onExportClick: function() {
         this.view.mainContainer.setActiveFooterMenu(3);
@@ -81,30 +84,28 @@ define({
         editForm.navigate(this.view.segPersons.selectedRowItems[0]);
     },
     onInit: function() {
+        let PersonModelClass = require("personModel");
         this.isDeleting = false;
         if (!dataBase) {
             setupSync().then(() => {
-                console.log("database created");
+                if (!personObjectService) {
+                    personObjectService = dataBase.performObjectService(PersonServiceConfig.name, {
+                        "access": "offline"
+                    });
+                }
+                if (!personModel) {
+                    personModel = new PersonModelClass(new kony.sdk.KNYObj(PersonServiceConfig.objects.person.name));
+                }
+
+                personModel.startSync().then(self.onPersonsClick);
             }).catch(Util.logError);
         }
 
         console.log("onInit called");
     },
     onPostShow: function() {
-        let PersonModelClass = require("personModel");
         var self = this;
-        self.PromiseUntilExists().then(() => {
-            if (!personObjectService) {
-                personObjectService = dataBase.performObjectService(PersonServiceConfig.name, {
-                    "access": "offline"
-                });
-            }
-            if (!personModel) {
-                personModel = new PersonModelClass(new kony.sdk.KNYObj(PersonServiceConfig.objects.person.name));
-            }
-
-            personModel.startSync().then(self.onPersonsClick);
-        }).catch(Util.logError);
+        dataBase.ifIsReady().then(self.onPersonsClick).catch(Util.logError);
     },
     animateSegmentOnDelete: function(isDeleting) {
         let finalWidthLeft = "0%";
@@ -194,28 +195,5 @@ define({
             rowList.push(rowItem);
         }
         return rowList;
-    },
-    PromiseUntilExists(secondsToWait = 5) {
-        let promise = new Promise((resolve, reject) => {
-            kony.timer.schedule("idTimer", () => {
-                if (dataBase.isUp) { //no exists
-                    resolve();
-                    kony.timer.cancel("idTimer");
-                    console.log("timer canceled");
-                    return;
-                }
-
-                secondsToWait--;
-                if (secondsToWait === 0) {
-                    reject(`time out ${secondsToWait} seconds`);
-                    kony.timer.cancel("idTimer");
-                    console.log("timer canceled");
-                }
-
-                console.log(`create Person try: ${secondsToWait}`);
-            }, 1, true);
-        });
-
-        return promise;
     }
 });

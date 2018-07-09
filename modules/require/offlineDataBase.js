@@ -3,14 +3,14 @@
 define(() => {
     return class OfflineDataBase {
         constructor() {
-            this.isUp = false;
+            this.isReady = false;
         }
         setup(options = {}) {
             var self = this;
             var promise = new Promise((resolve, reject) => {
                 KNYMobileFabric.OfflineObjects.setup(options, () => {
-                    self.isUp = true;
-                    resolve()
+                    resolve();
+                    self.isReady = true;
                 }, reject);
             });
 
@@ -21,6 +21,30 @@ define(() => {
             "access": "offline"
         }) {
             return kony.sdk.getCurrentInstance().getObjectService(offLineObjectServiceName, options);
+        }
+
+        ifIsReady(secondsToWait = 5) {
+            var self = this;
+            let promise = new Promise((resolve, reject) => {
+                kony.timer.schedule("idTimer", () => {
+                    secondsToWait--;
+                    console.log(`create Person try: ${secondsToWait}`);
+                    if (self.isReady) { //no exists
+                        resolve();
+                        kony.timer.cancel("idTimer");
+                        console.log("timer canceled");
+                        return;
+                    }
+
+                    if (secondsToWait === 0) {
+                        reject(`time out ${secondsToWait} seconds`);
+                        kony.timer.cancel("idTimer");
+                        console.log("timer canceled");
+                    }
+                }, 1, true);
+            });
+
+            return promise;
         }
     };
 });

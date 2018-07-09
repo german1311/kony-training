@@ -8,7 +8,7 @@ define(function() {
         initGettersSetters: function() {
 
         },
-        enableFullInput: function() {
+        enableFullInput: function() {          	
             this.view.flxContainerInput.width = "100%";
             this.view.txtInput.type = "string";
             this.view.txtInput.width = "95%";
@@ -18,7 +18,7 @@ define(function() {
             this.view.flxContainerInput.width = "35%";
             this.view.txtInput.type = "ref";
             this.view.txtInput.width = "preferred";
-            this.view.txtInput.setFocus(false);
+            // this.view.txtInput.setFocus(false);
         }
     };
 });

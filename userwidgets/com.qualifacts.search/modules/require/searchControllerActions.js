@@ -10,6 +10,12 @@ define({
             self.onDone(eventobject, changedtext);
         }
     },
+    /** onTouchStart defined for txtInput **/
+    AS_TextField_g497f6a91ab5460dbff11f43ddaae0bb: function AS_TextField_g497f6a91ab5460dbff11f43ddaae0bb(eventobject, x, y) {
+        var self = this;
+        console.log("calling from txtInput");
+        this.enableFullInput();
+    },
     /** onClick defined for flxContainerInput **/
     AS_FlexContainer_b98766bb2682409db1b21af31bd88f69: function AS_FlexContainer_b98766bb2682409db1b21af31bd88f69(eventobject) {
         var self = this;

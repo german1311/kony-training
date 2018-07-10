@@ -1,0 +1,29 @@
+{
+    "AS_TextField_g497f6a91ab5460dbff11f43ddaae0bb": {
+        "id": "AS_TextField_g497f6a91ab5460dbff11f43ddaae0bb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "uwua9aa67bcabc41668549bb38eb94d937",
+            "type": "userwidgets",
+            "KUID": "ua9aa67bcabc41668549bb38eb94d937"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__eb86d0f8e0ac450681509f3c13a1e153",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "console.log(\"calling from txtInput\");\nthis.enableFullInput();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

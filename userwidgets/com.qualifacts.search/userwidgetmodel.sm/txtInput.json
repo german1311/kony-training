@@ -50,6 +50,7 @@
     "focusskin": "s5ae1d4c860c42a4bff213d7847fff3c",
     "id": "txtInput",
     "ide_onDone": "AS_TextField_c58225a6e909482691fc27e4d4ef2309",
+    "ide_onTouchStart": "AS_TextField_g497f6a91ab5460dbff11f43ddaae0bb",
     "info": null,
     "iscustomlayout": false,
     "isvisible": true,

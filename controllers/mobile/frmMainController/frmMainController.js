@@ -25,7 +25,7 @@ define({
         this.view.segPersons.addAll(dataFormatted);
     },
     onAddClick: function() {
-        var editForm = new kony.mvc.Navigation("frmEditPerson");
+        let editForm = new kony.mvc.Navigation("frmEditPerson");
         editForm.navigate();
     },
     onDeleteClick: function() {
@@ -33,13 +33,14 @@ define({
         this.animateSegmentOnDelete(this.isDeleting);
     },
     onPersonsClick: function() {
-        var self = this;
+        let self = this;
         personModel.get().then((data) => {
             self.populateSegment(data);
             self.view.mainContainer.setActiveFooterMenu(1);
         }).catch(Util.logError);
     },
     onSyncClick: function() {
+        let self = this;
         this.view.mainContainer.setActiveFooterMenu(2);
         personModel.startSync().then(() => {
             alert("Sincronized");
@@ -48,6 +49,22 @@ define({
     },
     onExportClick: function() {
         this.view.mainContainer.setActiveFooterMenu(3);
+        personModel.get().then((data) => {
+            let uniqueName = Util.uniqueString();
+            let csv = Util.JsonToCsv(data);
+            var csvFile = new kony.io.File(`${uniqueName}.csv`);
+            try {
+                let writer = csvFile.write(csv);
+                if (writer) {
+                    let fileObject = kony.io.FileSystem.copyBundledRawFileTo(`${uniqueName}.csv`, "persons.csv")
+                    console.log("writed");
+                } else {
+                    Util.logError("Error writing");
+                }
+            } catch (err) {
+                Util.logError(err);
+            }
+        });
     },
     onDoneSearchText: function(e, ar) {
         var self = this;
@@ -76,8 +93,6 @@ define({
 
         let platformSpecificProperties = {};
         kony.ui.Alert(basicProperties, platformSpecificProperties);
-
-
     },
     onRowSegmentClick: function(eventObject, rowNumber) {
         var editForm = new kony.mvc.Navigation("frmEditPerson");
@@ -97,14 +112,14 @@ define({
                     personModel = new PersonModelClass(new kony.sdk.KNYObj(PersonServiceConfig.objects.person.name));
                 }
 
-                personModel.startSync().then(self.onPersonsClick);
+                personModel.startSync().then(() => {});
             }).catch(Util.logError);
         }
 
         console.log("onInit called");
     },
     onPostShow: function() {
-        var self = this;
+        let self = this;
         dataBase.ifIsReady().then(self.onPersonsClick).catch(Util.logError);
     },
     animateSegmentOnDelete: function(isDeleting) {
@@ -117,7 +132,7 @@ define({
             this.view.lblLeft.text = "Done"
         }
         let transformPropOne = kony.ui.makeAffineTransform();
-        transformPropOne.scale(1, 0);
+        transformPropOne.scale(0, 1);
         let transformPropTwo = kony.ui.makeAffineTransform();
         transformPropTwo.scale(1, 1);
         let animationDefinitionLeft = {

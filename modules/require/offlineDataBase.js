@@ -28,7 +28,7 @@ define(() => {
             let promise = new Promise((resolve, reject) => {
                 kony.timer.schedule("idTimer", () => {
                     secondsToWait--;
-                    console.log(`create Person try: ${secondsToWait}`);
+                    console.log(`create DataBase try: ${secondsToWait}`);
                     if (self.isReady) { //no exists
                         resolve();
                         kony.timer.cancel("idTimer");

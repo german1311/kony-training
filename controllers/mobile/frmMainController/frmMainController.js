@@ -52,11 +52,11 @@ define({
         personModel.get().then((data) => {
             let uniqueName = Util.uniqueString();
             let csv = Util.JsonToCsv(data);
-            var csvFile = new kony.io.File(`${uniqueName}.csv`);
+            var csvFile = new kony.io.File(`${uniqueName}.csv`).createFile();
             try {
                 let writer = csvFile.write(csv);
                 if (writer) {
-                    let fileObject = kony.io.FileSystem.copyBundledRawFileTo(`${uniqueName}.csv`, "persons.csv")
+                    let fileObject = kony.io.FileSystem.copyBundledRawFileTo(`${uniqueName}.csv`, "persons.csv");
                     console.log("writed");
                 } else {
                     Util.logError("Error writing");
@@ -120,16 +120,16 @@ define({
     },
     onPostShow: function() {
         let self = this;
-        dataBase.ifIsReady().then(self.onPersonsClick).catch(Util.logError);
+        dataBase.ifIsReady().then(()=>{personModel.ifIsReady().then(self.onPersonsClick);}).catch(Util.logError);
     },
     animateSegmentOnDelete: function(isDeleting) {
         let finalWidthLeft = "0%";
         let finalWidthRight = "100%";
-        this.view.lblLeft.text = "Delete"
+        this.view.lblLeft.text = "Delete";
         if (isDeleting) {
             finalWidthLeft = "15%";
             finalWidthRight = "85%";
-            this.view.lblLeft.text = "Done"
+            this.view.lblLeft.text = "Done";
         }
         let transformPropOne = kony.ui.makeAffineTransform();
         transformPropOne.scale(0, 1);
@@ -159,7 +159,7 @@ define({
             animationEnd: (flexContainer) => {
                 // Util.logError("animation flex ends");
             }
-        }
+        };
         let fullAnimationLeft = {
             definition: animationLeft,
             config: animationConfig,
@@ -187,7 +187,7 @@ define({
             animationEnd: (flexContainer) => {
                 // Util.logError("animation flex ends");
             }
-        }
+        };
         let animationRight = kony.ui.createAnimation(animationDefinitionRight);
         let fullAnimationRight = {
             definition: animationRight,

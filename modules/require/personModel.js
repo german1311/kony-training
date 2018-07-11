@@ -9,6 +9,7 @@ define(() => {
                 throw "An instance of kony.sdk.KNYObj for PersonObject is required";
             }
             this.personObject = personObject;
+          	this.isReady = false;
         }
 
         /**
@@ -20,10 +21,12 @@ define(() => {
             'downloadBatchSize': 50,
             'uploadBatchSize': 20
         }, onSyncProgress = null) {
+          	let self = this;
             var promise = new Promise((resolve, reject) => {
                 this.personObject.startSync(options, () => {
                     console.log("syncronized");
-                    resolve();
+                  	self.isReady = true;
+                    resolve();                  	
                 }, reject, onSyncProgress);
             });
 
@@ -125,6 +128,31 @@ define(() => {
             });
 
             return deletePromise;
+        }
+      
+      
+        ifIsReady(secondsToWait = 5) {
+            var self = this;
+            let promise = new Promise((resolve, reject) => {
+                kony.timer.schedule("idTimer2", () => {
+                    secondsToWait--;
+                    console.log(`create Person try: ${secondsToWait}`);
+                    if (self.isReady) { //no exists
+                        resolve();
+                        kony.timer.cancel("idTimer2");
+                        console.log("timer canceled");
+                        return;
+                    }
+
+                    if (secondsToWait === 0) {
+                        reject(`time out ${secondsToWait} seconds`);
+                        kony.timer.cancel("idTimer");
+                        console.log("timer canceled");
+                    }
+                }, 1, true);
+            });
+
+            return promise;
         }
     };
 });

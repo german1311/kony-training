@@ -26,17 +26,16 @@
     "project_version": "sprint31",
     "referenceWidth": "375",
     "startupformkey": "cece7312a65d40e685b69e1c050a03d5",
-    "vendornamekey": "KonyLabs",
+    "vendornamekey": "Qualifacts",
     "winmobileguidkey": "",
     "defaulttheme": "defaultTheme",
     "nativeContainerProperties": {
-        "isEnableJSContainerAndroid": true,
         "isModified": true,
-        "isEnableJSContaineriOS": true,
-        "isEnableJSContainer": true
+        "isEnableJSContainer": true,
+        "isEnableJSContainerAndroid": true,
+        "isEnableJSContaineriOS": true
     },
     "cordovaVersionInfo": {
-        "cordovaVersion": "8.0.0",
         "useGlobalCordova": false
     },
     "appmenu": {

@@ -1,0 +1,29 @@
+{
+    "AS_TextField_da4fe03eb8b54db781557b3764dc080f": {
+        "id": "AS_TextField_da4fe03eb8b54db781557b3764dc080f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmMain",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a3c97a169d754ef795952df0f4e6651b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchStart_dbcca77d70e54660a2a743989f551bef",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "console.log(\"calling from txtInput\");\nthis.enableFullInput();",
+            "callbackType": null
+        }]
+    }
+}

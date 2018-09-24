@@ -24,7 +24,7 @@ define(() => {
           	let self = this;
             var promise = new Promise((resolve, reject) => {
                 this.personObject.startSync(options, () => {
-                    console.log("syncronized");
+                    Util.logError("syncronized");
                   	self.isReady = true;
                     resolve();                  	
                 }, reject, onSyncProgress);
@@ -136,18 +136,18 @@ define(() => {
             let promise = new Promise((resolve, reject) => {
                 kony.timer.schedule("idTimer2", () => {
                     secondsToWait--;
-                    console.log(`create Person try: ${secondsToWait}`);
+                    Util.logError(`create Person try: ${secondsToWait}`);
                     if (self.isReady) { //no exists
                         resolve();
                         kony.timer.cancel("idTimer2");
-                        console.log("timer canceled");
+                        Util.logError("timer canceled");
                         return;
                     }
 
                     if (secondsToWait === 0) {
                         reject(`time out ${secondsToWait} seconds`);
                         kony.timer.cancel("idTimer");
-                        console.log("timer canceled");
+                        Util.logError("timer canceled");
                     }
                 }, 1, true);
             });

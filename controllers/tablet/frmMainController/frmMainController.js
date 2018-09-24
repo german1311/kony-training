@@ -116,7 +116,7 @@ define({
             }).catch(Util.logError);
         }
 
-        Util.logError("onInit called");
+        kony.print("onInit called");
     },
     onPostShow: function() {
         let self = this;

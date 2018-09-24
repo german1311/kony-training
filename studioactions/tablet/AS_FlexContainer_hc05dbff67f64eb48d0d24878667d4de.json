@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_hc05dbff67f64eb48d0d24878667d4de": {
+        "id": "AS_FlexContainer_hc05dbff67f64eb48d0d24878667d4de",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMain",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a3c97a169d754ef795952df0f4e6651b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_cfd85b845a8c43bf87d757070a2c3fc8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "console.log(\"calling from flxContainerControls\");\nthis.enableFullInput();",
+            "callbackType": null
+        }]
+    }
+}

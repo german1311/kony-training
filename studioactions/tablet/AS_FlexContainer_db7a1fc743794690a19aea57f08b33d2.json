@@ -1,0 +1,27 @@
+{
+    "AS_FlexContainer_db7a1fc743794690a19aea57f08b33d2": {
+        "id": "AS_FlexContainer_db7a1fc743794690a19aea57f08b33d2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMain",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a3c97a169d754ef795952df0f4e6651b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_b82d7ef6043e463a921023866d56a36a",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onDeleteClick",
+            "display": "onDeleteClick",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

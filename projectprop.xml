@@ -698,7 +698,7 @@
     <attributes name="wp10codeGeneration" value="false"/>
     <attributes name="bluetooth" value="false"/>
     <attributes name="apmappload" value="false"/>
-    <attributes name="build" value="debug"/>
+    <attributes name="build" value="release"/>
     <attributes name="ANDROIDWEAR_WRITE_SYNC_SETTINGS" value="false"/>
     <attributes name="spaandroidtab800basefontsize" value="14"/>
     <attributes name="cloud_url" value="https://m100023681001.konycloud.com"/>

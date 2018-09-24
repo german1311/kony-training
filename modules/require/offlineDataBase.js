@@ -28,18 +28,18 @@ define(() => {
             let promise = new Promise((resolve, reject) => {
                 kony.timer.schedule("idTimer", () => {
                     secondsToWait--;
-                    console.log(`create DataBase try: ${secondsToWait}`);
+                    Util.logError(`create DataBase try: ${secondsToWait}`);
                     if (self.isReady) { //no exists
                         resolve();
                         kony.timer.cancel("idTimer");
-                        console.log("timer canceled");
+                        Util.logError("timer canceled");
                         return;
                     }
 
                     if (secondsToWait === 0) {
                         reject(`time out ${secondsToWait} seconds`);
                         kony.timer.cancel("idTimer");
-                        console.log("timer canceled");
+                        Util.logError("timer canceled");
                     }
                 }, 1, true);
             });
